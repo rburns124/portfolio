@@ -200,14 +200,19 @@ section h2 {
 
 .card .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.85);
   color: white;
   padding: 1rem;
   transform: translateY(100%);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -218,6 +223,29 @@ section h2 {
 
 .card:hover .overlay {
   transform: translateY(0);
+}
+
+.date-badge {
+  position: absolute;
+  bottom: -0.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a2e;
+  border: 2px solid #4f46e5;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+#certifications .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#certifications .card h4 {
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 .placeholder {
