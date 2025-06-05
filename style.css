@@ -368,6 +368,13 @@ footer {
   visibility: visible;
 }
 
+/* Hide scroll to top button on larger screens */
+@media (min-width: 769px) {
+  .scroll-top {
+    display: none;
+  }
+}
+
 /* Mobile navigation */
 .menu-toggle {
   display: none;
