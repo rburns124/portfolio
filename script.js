@@ -21,6 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.remove('show');
   });
 
+  // Easter egg thank-you message
+  const certTitle = document.querySelector('#certifications h2');
+  const thanksMsg = document.getElementById('cert-thank-you');
+  if (certTitle && thanksMsg) {
+    certTitle.addEventListener('click', () => {
+      thanksMsg.classList.toggle('visible');
+    });
+  }
+
   // Scroll to top button
   const scrollBtn = document.getElementById('scrollTop');
   window.addEventListener('scroll', () => {
