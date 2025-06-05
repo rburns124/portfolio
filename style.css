@@ -248,6 +248,19 @@ section h2 {
   text-align: center;
 }
 
+.thank-you {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.thank-you.visible {
+  display: block;
+}
+
 .placeholder {
   text-align: center;
   padding: 4rem;
