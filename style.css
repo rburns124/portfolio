@@ -225,17 +225,6 @@ section h2 {
   transform: translateY(0);
 }
 
-.date-badge {
-  position: absolute;
-  bottom: -0.9rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #1a1a2e;
-  border: 2px solid #4f46e5;
-  padding: 0.25rem 1rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-}
 
 #certifications .card {
   display: flex;
