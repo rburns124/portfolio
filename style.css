@@ -196,6 +196,13 @@ section h2 {
 .card img {
   width: 100%;
   border-radius: 6px;
+  display: block;
+}
+
+/* Ensure project thumbnails fill the card without leaving extra space */
+#projects .card img {
+  height: 200px;
+  object-fit: cover;
 }
 
 .card .overlay {
