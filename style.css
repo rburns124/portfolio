@@ -92,6 +92,11 @@ nav a, .logo {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #8b5cf6;
 }
 
 
@@ -180,8 +185,17 @@ section h2 {
   transition: transform 0.3s;
 }
 
+.card.project {
+  padding: 0;
+  background: transparent;
+}
+
 .card:hover {
   transform: scale(1.03);
+}
+
+#resume .card:hover {
+  transform: none;
 }
 
 .card img {
@@ -189,18 +203,42 @@ section h2 {
   border-radius: 6px;
 }
 
+.project-img {
+  width: 100%;
+  padding-top: 56%;
+  background: #2a2a3a;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.project-date {
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a2e;
+  border: 2px solid #4f46e5;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
 .card .overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   background: rgba(0, 0, 0, 0.85);
   color: white;
   padding: 1rem;
-  transform: translateY(100%);
-  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 .card .overlay .btn {
   margin-top: 0.5rem;
@@ -208,7 +246,7 @@ section h2 {
 }
 
 .card:hover .overlay {
-  transform: translateY(0);
+  opacity: 1;
 }
 
 .placeholder {
@@ -253,7 +291,7 @@ button[type="submit"] {
 .pdf-viewer {
   width: 100%;
   height: 500px;
-  border: 2px solid #4f46e5;
+  border: none;
   border-radius: 8px;
 }
 
@@ -264,6 +302,15 @@ button[type="submit"] {
 .download-btn {
   background: #1a1a2e;
   border: 2px solid #4f46e5;
+  margin-top: 0.5rem;
+}
+
+/* Certification cards */
+#certifications .card {
+  text-align: center;
+}
+#certifications h4 {
+  margin-top: 0.5rem;
 }
 
 footer {
@@ -338,6 +385,9 @@ footer {
   .hero h1 {
     font-size: 2.5rem;
   }
+  .header-container {
+    position: relative;
+  }
   nav {
     position: relative;
   }
@@ -358,6 +408,7 @@ footer {
     cursor: pointer;
     font-size: 1.5rem;
     color: white;
+    margin-left: auto;
   }
 }
 
