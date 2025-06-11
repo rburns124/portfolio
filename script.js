@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile navigation toggle
+  // Toggle the nav menu on phones
   const menuToggle = document.querySelector('.menu-toggle');
   const navList = document.querySelector('nav ul');
   if (menuToggle) {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Certification modal
+  // Click a cert to open it larger
   const modal = document.getElementById('modal');
   const modalImg = modal.querySelector('img');
   document.querySelectorAll('#certifications .card img').forEach(img => {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.remove('show');
   });
 
-  // Easter egg thank-you message
+  // Hidden thank-you note for my mentors
   const certTitle = document.querySelector('#certifications h2');
   const thanksMsg = document.getElementById('cert-thank-you');
   if (certTitle && thanksMsg) {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Scroll to top button
+  // Show a button that scrolls to the top
   const scrollBtn = document.getElementById('scrollTop');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
